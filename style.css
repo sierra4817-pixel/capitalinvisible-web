@@ -174,10 +174,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: 1rem; /* Reducido de var(--spacing-xl) que equivale a 5rem */
   animation: fadeIn 1.2s ease-out;
 }
-
 .logo-wrapper {
   margin-bottom: var(--spacing-xs);
   display: flex;
