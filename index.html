@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL CAPITAL INVISIBLE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #bf953f; --bg: #000000; }
+        body { background: var(--bg); color: #fff; font-family: 'Inter', sans-serif; text-align: center; margin: 0; padding: 100px 20px; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--gold); text-transform: uppercase; margin-bottom: 20px; }
+        p { color: #ccc; max-width: 500px; margin: 20px auto; }
+        #lead-form { border: 1px solid #333; padding: 30px; background: #0a0a0a; max-width: 400px; margin: 40px auto; }
+        input { width: 100%; padding: 12px; background: #000; border: 1px solid var(--gold); color: #fff; margin-bottom: 15px; text-align: center; box-sizing: border-box; }
+        .btn-gold { display: inline-block; padding: 15px 30px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; cursor: pointer; background: transparent; transition: 0.3s; width: 100%; }
+        .btn-gold:hover { background: var(--gold); color: #000; }
+        #upsell-section { display: none; margin-top: 50px; border-top: 1px solid #333; padding-top: 40px; }
+    </style>
+</head>
+<body>
+    <h1>Capital Invisible</h1>
+    <p>La mayoría juega un juego cuyas reglas fueron escritas para que pierdan. El verdadero poder opera en las sombras.</p>
+    <div id="lead-form">
+        <p>Obtén el Capítulo 1 y la Guía de inicio.</p>
+        <input type="email" placeholder="Tu correo electrónico">
+        <button class="btn-gold" onclick="showUpsell()">OBTENER ACCESO</button>
+    </div>
+    <div id="upsell-section">
+        <h2 style="font-family: 'Cormorant Garamond'; color: var(--gold);">Ya tienes el principio. Domina el sistema.</h2>
+        <a href="https://payhip.com/CapitalInvisible" class="btn-gold" style="max-width: 300px;">ACCEDER AL SISTEMA COMPLETO</a>
+    </div>
+    <script>
+        function showUpsell() {
+            document.getElementById('lead-form').innerHTML = '<p style="color: var(--gold);">Revisa tu correo. Aquí tienes tu acceso:</p><a href="#" class="btn-gold">DESCARGAR PDF</a>';
+            document.getElementById('upsell-section').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
