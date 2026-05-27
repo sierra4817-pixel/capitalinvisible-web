@@ -174,10 +174,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: 1rem; /* Reducido de var(--spacing-xl) que equivale a 5rem */
   animation: fadeIn 1.2s ease-out;
 }
-
 .logo-wrapper {
   margin-bottom: var(--spacing-xs);
   display: flex;
@@ -694,8 +693,8 @@ header {
 /* --- Footer Component --- */
 footer {
   width: 100%;
-  margin-top: var(--spacing-md);
-  padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+  margin-top: 0.5rem; /* Reducido de var(--spacing-md) */
+  padding: 1rem 0 var(--spacing-lg) 0; /* Ajustado el padding superior */
   border-top: 1px solid rgba(255, 255, 255, 0.02);
   display: flex;
   flex-direction: column;
