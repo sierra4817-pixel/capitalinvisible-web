@@ -214,7 +214,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
   animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -419,8 +419,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--spacing-xl);
-  padding-top: var(--spacing-xl);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
   border-top: 1px solid rgba(191, 149, 63, 0.08);
   position: relative;
 }
@@ -698,7 +698,7 @@ header {
 /* --- Footer Component --- */
 footer {
   width: 100%;
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-md);
   padding: var(--spacing-md) 0 var(--spacing-lg) 0;
   border-top: 1px solid rgba(255, 255, 255, 0.02);
   display: flex;
