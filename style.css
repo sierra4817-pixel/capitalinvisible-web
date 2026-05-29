@@ -718,6 +718,29 @@ footer {
   text-align: center;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  font-size: 0.72rem;
+  color: var(--text-dark);
+  letter-spacing: 0.05em;
+  flex-wrap: wrap;
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-link {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--gold-primary);
+  text-shadow: 0 0 5px rgba(191, 149, 63, 0.3);
+}
+
 
 /* --- Keyframe Animations --- */
 @keyframes fadeIn {
