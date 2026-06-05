@@ -562,8 +562,8 @@
         <p class="subtitle">Aprende cómo operan el BIS y los megagestores, por qué el dinero fiduciario te descapitaliza, y cómo el 1% utiliza la deuda como activo.</p>
       </section>
 
-      <!-- Glassmorphic Capture Card -->
-      <div class="squeeze-card">
+      <!-- Glassmorphic Capture Card (integrated with MailerLite container styles) -->
+      <div id="mlb2-189439645777397475" class="squeeze-card ml-form-embedContainer ml-subscribe-form ml-subscribe-form-189439645777397475">
         <h2 class="cta-heading">Ingresa tu correo para descargar el reporte confidencial gratis.</h2>
         
         <!--
@@ -574,7 +574,7 @@
           3. El script de JS interceptará el envío para procesar la suscripción localmente y por fetch,
              y redirigirá inmediatamente al usuario a Payhip de forma transparente.
         -->
-        <form id="squeeze-form" class="capture-form ml-block-form" action="https://assets.mailerlite.com/jsonp/2409609/forms/189439645777397475/subscribe" data-code="" method="post" target="_blank">
+        <form id="squeeze-form" class="capture-form ml-block-form row-form" action="https://assets.mailerlite.com/jsonp/2409609/forms/189439645777397475/subscribe" data-code="" method="post" target="_blank">
           <div class="input-wrapper">
             <input 
               aria-label="email" 
@@ -681,10 +681,18 @@
 
   <!-- MailerLite Integration Scripts -->
   <script>
+    function ml_webform_success_189439645777397475() {
+      ml_success_redirect();
+    }
     function ml_webform_success_42242373() {
+      ml_success_redirect();
+    }
+    function ml_success_redirect() {
       try {
         var $ = ml_jQuery || jQuery;
         if ($) {
+          $('.ml-subscribe-form-189439645777397475 .row-success').show();
+          $('.ml-subscribe-form-189439645777397475 .row-form').hide();
           $('.ml-subscribe-form-42242373 .row-success').show();
           $('.ml-subscribe-form-42242373 .row-form').hide();
         }
